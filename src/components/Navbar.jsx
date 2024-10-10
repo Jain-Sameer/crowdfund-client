@@ -5,7 +5,7 @@ import { useStateContext } from "../context/index";
 import { CustomButton } from "./";
 import { logo, menu, search, thirdweb } from "../assets";
 import { navlinks } from "../constants";
-
+import profile from "../assets/profile.png"
 const Navbar = () => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState("dashboard");
@@ -46,7 +46,7 @@ const Navbar = () => {
             <img
               src={thirdweb}
               alt="user"
-              className="w-[60%] h-[60%] object-contain"
+              className=" w-[60%] h-[60%] object-contain"
             />
           </div>
         </Link>
@@ -61,7 +61,6 @@ const Navbar = () => {
             className="w-[60%] h-[60%] object-contain"
           />
         </div>
-
         <img
           src={menu}
           alt="menu"
